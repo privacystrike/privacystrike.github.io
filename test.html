@@ -7,20 +7,17 @@
       }
       function shit() {
         document.write("<center><h1>Something wrong, oh sh~~!</h1></center>");
+        var isShit = true;
       }
     </script>
-  <style id="style" src="https://yastatic.net/www/_/7/P/Ds4UxdGErZTre-jFoVYQpSUfE.css"></style>
+  <style id="style" src="https://yastatic.net/www/_/7/P/Ds4UxdGErZTre-jFoVYQpSUfE.css" onload="shit();"></style>
   </head>
     <body>
-    <img id="image" src="https://www.google.ru/images/srpr/logo11w.png" size="0"/>
-    <script id="script" src="https://yastatic.net/jquery/1.8.3/jquery.min.js"></script>
+    <img id="image" src="https://www.google.ru/images/srpr/logo11w.png" size="0" onload="shit()'"/>
+    <script id="script" src="https://yastatic.net/jquery/1.8.3/jquery.min.js" onload="shit();"></script>
     <script>
-    if (!document.getElementById("style").complete && !document.getElementById("image").complete && !document.getElementById("script").complete)
-      {
-      good();
-      } else {
-      shit();
-      }
+       if (isShit == true) {
+       } else { good(); }
     </script>
     </body>
 </html>
