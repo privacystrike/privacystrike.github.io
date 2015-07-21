@@ -1,19 +1,26 @@
 <html>
   <head>
+    <title>TPB test page</title>
     <script>
       function good() {
-        document.write("<center><h6>Alright, you are great!</h6></center>");
+        document.write("<center><h1>Alright, you are great!</h1></center>");
       }
       function shit() {
-        document.write("<center><h6>Something wrong, oh sh~~!</h6></center>");
+        document.write("<center><h1>Something wrong, oh sh~~!</h1></center>");
       }
     </script>
   <script>good();</script>
-  <title>TPB test page</title>
-  <style src="https://yastatic.net/www/_/7/P/Ds4UxdGErZTre-jFoVYQpSUfE.css" onload="shit();"></style>
+  <style id="style" src="https://yastatic.net/www/_/7/P/Ds4UxdGErZTre-jFoVYQpSUfE.css"></style>
   </head>
     <body>
-    <img src="" onload="shit();" size="0"/>
-    <script src="https://yastatic.net/jquery/1.8.3/jquery.min.js" onload="shit();"></script>
+    <img id="image" src="https://www.google.ru/images/srpr/logo11w.png" size="0"/>
+    <script id="script" src="https://yastatic.net/jquery/1.8.3/jquery.min.js""></script>
+    <script>
+    if (document.getElementById("style") == null && document.getElementById("image") == null && document.getElementById("script") == null)
+      {
+      good();
+      }
+      shit();
+    </script>
     </body>
 </html>
